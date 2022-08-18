@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Library</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class="heading">VIRTUAL LIBRARY</h1>
+    </div>
+    <div id="container">
+        <div class="btn-box">
+            <button class="add-btn" id="add-btn">+</button>
+        </div>
+        <div class="book-container">
+        </div>
+        <form onsubmit="return false" id="book-form">
+            <div class="cross-btn">
+                <i class="fa-regular fa-circle-xmark close"></i>
+            </div>
+            <div class="form-row">
+                <label for="title">Enter Title:</label>
+                <input class="input" type="text" name="title" id="title" required/>
+            </div>
+            <div class="form-row">
+                <label for="author">Enter Author:</label>
+                <input class="input" type="text" name="author" id="author" required />
+            </div>
+            <div class="form-row">
+                <label for="pages">Pages:</label>
+                <input class="input" type="number" name="pages" id="pages" min="1" required />
+            </div>
+            <div class="check-div">
+                <label>Read:</label>
+                <input type="checkbox" id="checkbox">
+            </div>
+            <div class="bottom-row">
+                <button class="submit-btn" id="submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
